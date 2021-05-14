@@ -70,6 +70,7 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/a6000
 TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
 BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-len-linux-gnueabi-
 
 # Power
 TARGET_HAS_NO_POWER_STATS := true
