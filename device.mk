@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/wingtech/wt88047/wt88047-vendor.mk)
+$(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
