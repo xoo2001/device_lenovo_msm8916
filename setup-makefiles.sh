@@ -18,10 +18,10 @@
 
 set -e
 
-DEVICE=wt88047
-VENDOR=wingtech
+DEVICE=a6000
+VENDOR=lenovo
 
-INITIAL_COPYRIGHT_YEAR=2015
+INITIAL_COPYRIGHT_YEAR=2021
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
