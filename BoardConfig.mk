@@ -59,18 +59,20 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_a6000
-TARGET_RECOVERY_DEVICE_MODULES := libinit_a6000
+#TARGET_INIT_VENDOR_LIB := libinit_a6000
+#TARGET_RECOVERY_DEVICE_MODULES := libinit_a6000
 
 # Kernel
 BOARD_DTBTOOL_ARGS := -2
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_SOURCE := kernel/lenovo/a6000
-TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
 BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TOP_PATH := $(realpath $(TOP))
+KERNEL_TOOLCHAIN := $(TOP_PATH)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-len-linux-gnueabi-
+TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
 
 # Power
 TARGET_HAS_NO_POWER_STATS := true
@@ -91,7 +93,7 @@ BOARD_SEPOLICY_DIRS += \
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
-    /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
+     /system/vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
 # inherit from the proprietary version
 include vendor/lenovo/a6000/BoardConfigVendor.mk
