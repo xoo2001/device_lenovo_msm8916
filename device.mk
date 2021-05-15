@@ -129,7 +129,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SHIPPING_API_LEVEL := 19
 
 # System Properties
-$(call inherit-product, device/smartfren/rendang/system_prop.mk)
+$(call inherit-product, device/lenovo/a6000/system_prop.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
