@@ -67,7 +67,7 @@ BOARD_DTBTOOL_ARGS := -2
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_SOURCE := kernel/lenovo/a6000
-BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
+# BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TOP_PATH := $(realpath $(TOP))
 KERNEL_TOOLCHAIN := $(TOP_PATH)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi/bin
