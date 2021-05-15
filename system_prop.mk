@@ -22,8 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
+    ro.sf.lcd_density=280
 
+# Hex Baseband
+gsm.version.baseband=DPM.1.0.1.c1-00093-M8936FAAAANUZM-S86518C1-V16-xvae27
 # Factory Reset Protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/config
@@ -34,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.target=dpm4 \
+    persist.data.target=dpm1 \
     persist.data.qmi.adb_logmask=0 \
     persist.radio.multisim.config=dsds \
     persist.radio.custom_ecc=1 \
