@@ -14,9 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_rendang.mk
+    $(LOCAL_DIR)/nad_a6000.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_rendang-user \
-    nad_rendang-userdebug \
-    nad_rendang-eng
+    nad_a6000-userdebug
