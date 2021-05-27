@@ -197,6 +197,10 @@ PRODUCT_PACKAGES += \
     libboringssl-compat \
     Snap
 
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -645,5 +649,17 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ums=2286 \
     ro.usb.id.ums_adb=2285 \
     ro.usb.vid=2970
+
+# Makes device compatible with Google Dialer Go.
+# In better case it should be a part of Gapps
+# but we have no Gapps specially for Android Go devices
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/googledialergo-sysconfig.xml:system/etc/sysconfig/googledialergo-sysconfig.xml
+
+# Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults_512.mk)
+
+# Device was launched with K
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 
 $(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
