@@ -233,6 +233,9 @@ vendor/lib/lib-imsvt.so|6d9bc7654d48ab9f4315f43bcf62fc9f67f94ffd
 vendor/lib/librcc.so|a409377843c8c0af7f92beac09048927e36e7ca0
 vendor/lib/libvoice-svc.so|fe8d2807b5b1a35310a9bcf80ceb4467503130b0
 
+# Sensors
+vendor/lib/sensors.a6000.so
+
 # Signed Venus (media) firmware
 etc/firmware/venus.b00:vendor/firmware/venus.b00
 etc/firmware/venus.b01:vendor/firmware/venus.b01
