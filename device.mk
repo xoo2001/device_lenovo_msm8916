@@ -72,6 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=false \
     persist.sys.sf.disable_blurs=true \
     sys.use_fifo_ui=1
+    persist.data.target=dpm1
 
 # Screen density
 PRODUCT_PROPERTY_OVERRIDES += \
