@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/lenovo/a6010
+DEVICE_PATH := device/lenovo/a6000
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
@@ -44,11 +44,11 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 loop.max_part=16 pm.sleep_mode=1 vmalloc=400M  androidboot.memcg=true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/lenovo/a6010
+TARGET_KERNEL_SOURCE := kernel/lenovo/a6000
 TOP_PATH := $(realpath $(TOP))
 KERNEL_TOOLCHAIN := $(TOP_PATH)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-len-linux-gnueabi-
-TARGET_KERNEL_CONFIG := lineageos_a6010_defconfig
+TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
 TARGET_HAS_MEMFD_BACKPORT := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
@@ -90,7 +90,7 @@ endif
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2016-03-01
+VENDOR_SECURITY_PATCH := 2017-02-01
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
@@ -194,4 +194,4 @@ TARGET_DISABLE_WCNSS_CONFIG_COPY := true
 DISABLE_APEX_TEST_MODULE := true
 
 # Proprietary Prebuilt
--include vendor/lenovo/a6010/BoardConfigVendor.mk
+-include vendor/lenovo/a6000/BoardConfigVendor.mk

@@ -734,4 +734,4 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-$(call inherit-product, vendor/lenovo/a6010/a6010-vendor.mk)
+$(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
