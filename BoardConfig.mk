@@ -90,7 +90,7 @@ endif
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2017-02-01
+VENDOR_SECURITY_PATCH := 2017-05-01
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
